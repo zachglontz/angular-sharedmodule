@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedMfeService } from '../../../app/shared-mfe/shared-mfe.service';
+import { SharedMfeService } from '../../shared-mfe/shared-mfe.service';
 
 @Component({
   selector: 'app-order-list',

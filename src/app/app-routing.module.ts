@@ -8,17 +8,17 @@ const routes: Routes = [
   {
     path: 'customers',
     loadChildren: () =>
-      import('./customers/customers.module').then((mod) => mod.CustomersModule),
+      import('./lazy1/customers.module').then((mod) => mod.CustomersModule),
   },
   {
     path: 'orders',
     loadChildren: () =>
-      import('./orders/orders.module').then((mod) => mod.OrdersModule),
+      import('./lazy2/orders.module').then((mod) => mod.OrdersModule),
   },
   {
     path: 'invoices',
     loadChildren: () =>
-      import('./invoices/invoices.module').then((mod) => mod.InvoicesModule),
+      import('./lazy3/invoices.module').then((mod) => mod.InvoicesModule),
   },
   {
     path: 'eager',
