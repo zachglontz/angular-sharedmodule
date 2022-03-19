@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedMfeService } from '../../shared-mfe/shared-mfe.module';
+import { SharedMfeService } from "src/app/shared-mfe/shared-mfe.service";
 import { HeroStore } from '../customers-store';
 import { HeroApiService } from '../hero.api.service';
 

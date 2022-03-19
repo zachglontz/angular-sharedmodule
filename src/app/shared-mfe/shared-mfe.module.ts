@@ -34,11 +34,6 @@ export class SharedMfeModule {
   }
 }
 
-// export class here so client component can call methods to update mfe state
-// so we can do tis instead of Input()
-export { SharedMfeApi } from './shared-mfe.api';
-export { SharedMfeService } from './shared-mfe.service';
-
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

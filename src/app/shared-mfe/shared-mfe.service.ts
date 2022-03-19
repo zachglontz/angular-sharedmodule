@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SharedMfeApi } from './shared-mfe.module';
+import { SharedMfeApi } from "./shared-mfe.api";
 
 @Injectable()
 export class SharedMfeService {

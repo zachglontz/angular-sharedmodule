@@ -56,3 +56,6 @@ baseline.json
 
 # Husky
 .husky/_
+
+# Cache folder for the Angular CLI.
+.angular/cache

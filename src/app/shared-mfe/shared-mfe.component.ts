@@ -1,5 +1,4 @@
 import { Component, forwardRef, Inject, OnInit } from '@angular/core';
-import { SharedMfeApi } from './shared-mfe.module';
 import { SharedMfeService } from './shared-mfe.service';
 
 @Component({
@@ -9,10 +8,7 @@ import { SharedMfeService } from './shared-mfe.service';
   providers: [],
 })
 export class SharedMfeComponent implements OnInit {
-  constructor(
-    // provided by parent
-    @Inject(forwardRef(() => SharedMfeService)) private sv: SharedMfeService
-  ) {}
+  constructor(private sv: SharedMfeService) {}
 
   ngOnInit() {
     console.log('ngOnInit in SharedMfeComponent');

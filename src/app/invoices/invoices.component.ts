@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  SharedMfeApi,
-  SharedMfeService,
-} from '../shared-mfe/shared-mfe.module';
+import { SharedMfeApi } from "../shared-mfe/shared-mfe.api";
+import { SharedMfeService } from "../shared-mfe/shared-mfe.service";
 
 @Component({
   selector: 'app-invoices',
