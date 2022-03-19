@@ -17,4 +17,9 @@ export class SharedMfeService {
       console.log('already set true');
     }
   }
+
+  getState()
+  {
+    return this.hasBeenCalled;
+  }
 }

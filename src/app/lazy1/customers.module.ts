@@ -2,13 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CustomerComponent } from './customer/customer.component';
 import { SharedMfeModule } from '../shared-mfe/shared-mfe.module';
 
 @NgModule({
   // uses forRoot singleton instances of SharedMfeModule in app module
   imports: [CommonModule, CustomersRoutingModule, SharedMfeModule],
-  declarations: [CustomerListComponent, CustomerComponent],
+  declarations: [CustomerListComponent],
 })
 export class CustomersModule {}
 
