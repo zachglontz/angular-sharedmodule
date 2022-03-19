@@ -6,6 +6,7 @@ import { InvoicesRoutingModule } from './invoices-routing.module';
 import { InvoicesComponent } from './invoices.component';
 
 @NgModule({
+  // transient instances
   imports: [CommonModule, InvoicesRoutingModule, SharedMfeModule],
   declarations: [InvoicesComponent],
 })

@@ -12,6 +12,6 @@ export class SharedMfeApi {
   constructor() {}
 
   call() {
-    console.log('testing');
+    // console.log('testing');
   }
 }
