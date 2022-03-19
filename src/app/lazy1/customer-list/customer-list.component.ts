@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedMfeService } from '../../shared-mfe/shared-mfe.service';
-import { HeroStore } from '../customers-store';
-import { HeroApiService } from '../hero.api.service';
 
 @Component({
   selector: 'app-customer-list',
   templateUrl: './customer-list.component.html',
   styleUrls: ['./customer-list.component.css'],
-  providers: [HeroApiService, HeroStore],
+  providers: [],
 })
 export class CustomerListComponent implements OnInit {
   constructor(
-    private herStore: HeroStore,
     private sharedMfeService: SharedMfeService
   ) {}
 

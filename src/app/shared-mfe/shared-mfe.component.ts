@@ -8,9 +8,15 @@ import { SharedMfeService } from './shared-mfe.service';
   providers: [],
 })
 export class SharedMfeComponent implements OnInit {
+
+  public currentState: boolean = false;
+
   constructor(private sv: SharedMfeService) {}
 
   ngOnInit() {
+    this.sv.getState().subscribe(e => {
+      this.currentState = e;
+    })
     console.log('ngOnInit in SharedMfeComponent');
   }
 }
